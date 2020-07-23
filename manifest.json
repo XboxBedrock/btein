@@ -1,0 +1,55 @@
+{
+    "name": "Build the Earth",
+    "ramConfigClient": [
+        {"ram": "default", "response": "warning", "renderDistance": [8, 4], "args": "-Xss4M -Xmx2500M -XX:+DisableExplicitGC -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=30 -XX:G1HeapRegionSize=32M -Duser.country=US -Duser.language=en"},
+        {"ram": "0B", "response": "error", "renderDistance": [2, 2], "args": "-Xms256M -Xmx700M -XX:+DisableExplicitGC -XX:+NeverTenure -XX:NewRatio=3 -XX:+UseConcMarkSweepGC -XX:MinHeapFreeRatio=5 -XX:+UseCodeCacheFlushing -XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=32m -Duser.country=US -Duser.language=en"},
+        {"ram": "1.5G", "response": "error", "renderDistance": [2, 2], "args": "-Xss1800k -Xms256M -Xmx900M -XX:+DisableExplicitGC -XX:+NeverTenure -XX:NewRatio=3 -XX:+UseConcMarkSweepGC -XX:MinHeapFreeRatio=5 -XX:+UseCodeCacheFlushing -XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=32m -Duser.country=US -Duser.language=en"},
+        {"ram": "2G", "response": "error", "renderDistance": [4, 4], "args": "-Xss2M -Xms256M -Xmx1200M -XX:+DisableExplicitGC -XX:+NeverTenure -XX:NewRatio=3 -XX:+UseConcMarkSweepGC -XX:MinHeapFreeRatio=5 -XX:+UseCodeCacheFlushing -XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=32m -Duser.country=US -Duser.language=en"},
+        {"ram": "3G", "response": "warning", "renderDistance": [6, 4], "args": "-Xss4M -Xmx1800M -XX:+DisableExplicitGC -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=30 -XX:G1HeapRegionSize=32M -Duser.country=US -Duser.language=en"},
+        {"ram": "4G", "response": "ok", "renderDistance": [8, 4], "args": "-Xss4M -Xmx2500M -XX:+DisableExplicitGC -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=30 -XX:G1HeapRegionSize=32M -Duser.country=US -Duser.language=en"},
+        {"ram": "6G", "response": "ok", "renderDistance": [8, 4], "args": "-Xss4M -Xmx3G -XX:+DisableExplicitGC -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=30 -XX:G1HeapRegionSize=32M -Duser.country=US -Duser.language=en"},
+        {"ram": "8G", "response": "ok", "renderDistance": [8, 4], "args": "-Xss4M -Xmx3G -XX:+DisableExplicitGC -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=30 -XX:G1HeapRegionSize=32M -Duser.country=US -Duser.language=en"},
+        {"ram": "12G", "response": "ok", "renderDistance": [8, 4], "args": "-Xss4M -Xmx4G -XX:+DisableExplicitGC -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=30 -XX:G1HeapRegionSize=32M -Duser.country=US -Duser.language=en"},
+        {"ram": "24G", "response": "ok", "renderDistance": [8, 4], "args": "-Xss4M -Xmx6G -XX:+DisableExplicitGC -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=30 -XX:G1HeapRegionSize=32M -Duser.country=US -Duser.language=en"}
+    ],
+    "migrateWorlds": [
+        {
+            "type": "twitch",
+            "packName": "Build The Earth modpack",
+            "migrationType": "copy"
+        }
+    ],
+    "langData": {
+        "en_us": "https://bte-installer.s3.amazonaws.com/public/lang/en_us.properties",
+        "pl_pl": "https://bte-installer.s3.amazonaws.com/public/lang/pl_pl.properties"
+    },
+    "libRedirect": {
+    },
+    "versions": [
+        {
+            "version": "1.6",
+            "forge": "1.12.2-forge1.12.2-14.23.5.2847",
+            "forgeJson": "https://bte-installer.s3.amazonaws.com/public/forge_versions/1.12.2-forge1.12.2-14.23.5.2847.json",
+            "forgeUrl": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2847/forge-1.12.2-14.23.5.2847-universal.jar",
+            "modpackClient": "http://download1322.mediafire.com/23hjc9yjo7sg/x3a2fqobbqjndc5/BuildTheEarthPack_1.6.zip",
+            "modpackServer": null
+        },
+        {
+            "version": "1.5",
+            "forge": "1.12.2-forge1.12.2-14.23.5.2847",
+            "forgeJson": "https://bte-installer.s3.amazonaws.com/public/forge_versions/1.12.2-forge1.12.2-14.23.5.2847.json",
+            "forgeUrl": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2847/forge-1.12.2-14.23.5.2847-universal.jar",
+            "modpackClient": "https://bte-installer.s3.amazonaws.com/public/modpack_versions/BuildTheEarthPack_1.5.zip",
+            "modpackServer": null
+        },
+        {
+            "version": "1.4",
+            "forge": "1.12.2-forge1.12.2-14.23.5.2847",
+            "forgeJson": "https://bte-installer.s3.amazonaws.com/public/forge_versions/1.12.2-forge1.12.2-14.23.5.2847.json",
+            "forgeUrl": "https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2847/forge-1.12.2-14.23.5.2847-universal.jar",
+            "modpackClient": "https://bte-installer.s3.amazonaws.com/public/modpack_versions/BuildTheEarthPack_1.4.zip",
+            "modpackServer": null
+        }
+    ]
+}
+
