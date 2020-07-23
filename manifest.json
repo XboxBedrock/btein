@@ -1,5 +1,5 @@
 {
-    "name": "Build the Earth",
+    "name": "Build the Earth INDIA",
     "ramConfigClient": [
         {"ram": "default", "response": "warning", "renderDistance": [8, 4], "args": "-Xss4M -Xmx2500M -XX:+DisableExplicitGC -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=30 -XX:G1HeapRegionSize=32M -Duser.country=US -Duser.language=en"},
         {"ram": "0B", "response": "error", "renderDistance": [2, 2], "args": "-Xms256M -Xmx700M -XX:+DisableExplicitGC -XX:+NeverTenure -XX:NewRatio=3 -XX:+UseConcMarkSweepGC -XX:MinHeapFreeRatio=5 -XX:+UseCodeCacheFlushing -XX:+CMSClassUnloadingEnabled -XX:ReservedCodeCacheSize=32m -Duser.country=US -Duser.language=en"},
